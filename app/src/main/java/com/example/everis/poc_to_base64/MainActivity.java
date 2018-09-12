@@ -25,7 +25,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    //@BindView(R.id.rvImage)
+    @BindView(R.id.rvImage)
     RecyclerView rvImage;
 
     ImageAdapter imageAdapter;
@@ -38,21 +38,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // ButterKnife.bind(this);
-        rvImage = (RecyclerView)findViewById(R.id.rvImage);
+        ButterKnife.bind(this);
         mService = ApiUtil.getService();
+        imageAdapter = new ImageAdapter();
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplication());
         rvImage.setLayoutManager(layoutManager);
 
 
-      //  imageAdapter = new ImageAdapter();
-
         rvImage.setHasFixedSize(true);
-        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
+        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(getApplication(),DividerItemDecoration.VERTICAL);
         rvImage.addItemDecoration(itemDecoration);
+    }
 
+    @OnClick(R.id.btnImage)
+    public void butonImage(){
         fillList();
+
     }
     private void fillList(){
 
@@ -60,15 +62,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ImageResponse> call, Response<ImageResponse> response) {
                 if (response.isSuccessful()) {
-                    if(response.body().getBody()!=null) {
-                        mImages = response.body().getBody().getImagen();
-                        imageAdapter.loadImage(mImages);
+                    ImageResponse imageResponse =response.body();
+                    if(imageResponse!=null){
+                        mImages = imageResponse.getImagen();
+                        if (mImages!=null){
+                            imageAdapter.loadImage(mImages);
 
-                        rvImage.setAdapter(imageAdapter);
+                            rvImage.setAdapter(imageAdapter);
                     }
-                    else {
-                        Log.d("Log", "onResponse: ");
+                        else {
+                            Log.d("MainActivity", "onResponse: ImagenList null");
+                        }
+                    }else {
+                        Log.d("MainActivity", "onResponse: ImagenResponse null");
                     }
+//                    Body body = response.body().getBody();
+//                    if (body!=null) {
+//                        mImages = response.body().getBody().getImagen();
+//                        List<Imagen> listImage = new ArrayList<>();
+//                        listImage.addAll(mImages);
+//                        imageAdapter.loadImage(listImage);
+//                    }
+//                    else {
+//                        Log.d("MainActivity", "onResponse: BODY error");
+//                    }
+                }else {
+                    Log.d("MainActivity", "onResponse: no succes ");
                 }
             }
 
