@@ -1,7 +1,7 @@
 
-Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8”ÅóÖÜ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Áìæş8”ÅóÖÜ,
-jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(²Ú±8”ÅóÖÜ,
-Ksquid:S1905"/Remove this unnecessary cast to "RecyclerView".(Å¹ë™8”ÅóÖÜ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËÃúÿÿÿÿ8”ÅóÖÜ,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜çÊ£ÿÿÿÿÿ8ÁßöÖÜ,
+Msquid:S1905*"/Remove this unnecessary cast to "RecyclerView".(Å¹ë™8òò™ÙÜ,
+isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(Áìæş8òò™ÙÜ,
+`squid:UselessImportCheck"0Remove this unused import 'butterknife.OnClick'.(ÔÌÓ¿ÿÿÿÿÿ8òò™ÙÜ,
+nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ËÃúÿÿÿÿ8òò™ÙÜ,
+lsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(²Ú±8òò™ÙÜ,
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8òò™ÙÜ,
