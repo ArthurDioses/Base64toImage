@@ -1,0 +1,25 @@
+
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+w
+Gapp/src/main/java/com/example/everis/poc_to_base64/network/Service.java,2/b/2bc20fce49d9f315c04f0f5465559812d8360431
+~
+Napp/src/main/java/com/example/everis/poc_to_base64/network/RetrofitClient.java,6/1/61222710d1e6221bbb50c05c61d20cef160ba6d2
+t
+Dapp/src/main/java/com/example/everis/poc_to_base64/util/ApiUtil.java,d/5/d519bf7fda4669ea672f279fb993ffc86a8d4513
+t
+Dapp/src/main/java/com/example/everis/poc_to_base64/MainActivity.java,2/8/280498e67d18d500a4c8a906a408d615916bef6a
+|
+Lapp/src/main/java/com/example/everis/poc_to_base64/adapter/ImageAdapter.java,f/0/f0e9ee9d001cc53b42b7bd12272ef6840445e83d
+U
+%app/src/main/res/layout/image_row.xml,7/1/7167d1e44fc594d28f61090901375777abb6768f
+Y
+)app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
+s
+Capp/src/main/java/com/example/everis/poc_to_base64/models/Body.java,c/e/ce636a54702df941da62e01a3610905b4673b179
+u
+Eapp/src/main/java/com/example/everis/poc_to_base64/models/Imagen.java,0/4/0412f303c2e9b96b58319cd26cd81071f3663921
+}
+Mapp/src/main/java/com/example/everis/poc_to_base64/network/ImageResponse.java,1/8/187589effc5c7860653ef79bd873bf66922e71d1
