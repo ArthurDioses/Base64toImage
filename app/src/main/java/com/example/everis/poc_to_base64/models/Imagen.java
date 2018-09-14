@@ -2,7 +2,9 @@ package com.example.everis.poc_to_base64.models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Imagen {
+import java.io.Serializable;
+
+public class Imagen implements Serializable {
     @SerializedName("img_id")
     private String imgId;
     @SerializedName("base64")

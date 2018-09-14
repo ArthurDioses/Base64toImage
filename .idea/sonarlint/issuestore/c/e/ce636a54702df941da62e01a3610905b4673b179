@@ -1,0 +1,6 @@
+
+^squid:S2094"BRemove this empty class, write its code or make it an "interface".(úœ¶”8Ôî°ñÜ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€ý†È8Ôî°ñÜ,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™äÈI8Ôî°ñÜ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þýâµ8Ôî°ñÜ,
+Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Ôî°ñÜ,

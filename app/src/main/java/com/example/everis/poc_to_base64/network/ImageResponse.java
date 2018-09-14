@@ -1,15 +1,20 @@
 package com.example.everis.poc_to_base64.network;
 
 import com.example.everis.poc_to_base64.models.Body;
+import com.example.everis.poc_to_base64.models.Imagen;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class ImageResponse {
-    private Body body;
+    @SerializedName("image")
+    private List<Imagen> image = null;
 
-    public Body getBody() {
-        return body;
+    public List<Imagen> getImagen() {
+        return image;
     }
 
-    public void setBody(Body body) {
-        this.body = body;
+    public void setImagen(List<Imagen> imagen) {
+        this.image = imagen;
     }
 }

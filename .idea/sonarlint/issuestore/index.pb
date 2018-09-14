@@ -23,3 +23,9 @@ u
 Eapp/src/main/java/com/example/everis/poc_to_base64/models/Imagen.java,0/4/0412f303c2e9b96b58319cd26cd81071f3663921
 }
 Mapp/src/main/java/com/example/everis/poc_to_base64/network/ImageResponse.java,1/8/187589effc5c7860653ef79bd873bf66922e71d1
+\
+,app/src/main/res/layout/fragment_prepago.xml,e/3/e37bb04f4aecc9618486363cb798e5d62b9679f0
+‚
+Rapp/src/main/java/com/example/everis/poc_to_base64/adapter/ImageClickListener.java,0/e/0ea7182306944a345618a40a44eacd37b544afd5
+w
+Gapp/src/main/java/com/example/everis/poc_to_base64/PrepagoFragment.java,5/5/559529a7aa86382dd428084eff2f2a32281f7604
